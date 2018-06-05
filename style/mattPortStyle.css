@@ -1,0 +1,235 @@
+/*FONTS*/
+
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/Autobus-Bold.ttf);
+}
+@font-face {
+    font-family: paraFont;
+    src: url(../fonts/PT_Serif-Web-Regular.ttf);
+}
+/*TOP AREA*/
+body{
+    margin: 0px;
+    background-color: #faf7f0 ;
+    color: #323232;
+}
+
+#title{
+    font-size: 85px;
+    padding: 60px 0px 30px 0px;
+    background-color: #6FCF96 ;
+    margin-bottom: 75px;
+    font-family: titleFont;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+}
+
+img#mattLogo{
+    padding: 20px 0px;
+}
+
+.centered{
+    border: 0px solid black;
+    margin: auto;
+    margin-bottom: 0em;
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    
+}
+
+.arrow{
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 0px 35px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+/*LOWER AREA*/
+#upArrow{
+    display: none;
+}
+
+#navTitle{
+    font-size: 40px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    font-family: titleFont;
+    letter-spacing: 5px;
+}
+
+#section1{
+    margin: 0px 15px;
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeBoxes{
+    padding: 15px 0px;
+    border: 0px solid #323232;
+    font-family: titleFont;
+    font-size: 30px;
+    width: 33.33%;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-align: center;
+
+}
+/* FOR WHEN IT IS CLICKED AND UNCLICKED */
+.homeBoxLit{
+    background-color: #6FCF96;
+    transition: background-color .3s;
+}
+
+
+.flex-container {
+    display: flex;
+    margin: 0px 15px;
+    justify-content: center;
+
+  }
+  /*
+  .homeBoxes {
+    margin: auto;
+    padding: 0px;
+    font-size: 30px;
+    width: 33%;
+  }
+*/
+
+
+
+
+
+.dropDown{
+    background-color: #6FCF96  ;
+    overflow-x: scroll;
+    height: 450px;
+    margin: 0px 15px ;
+    display: block;
+    padding: 25px;
+    
+}
+
+.dropDownTitle{
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-family: titleFont;
+    letter-spacing: 5px;
+}
+
+.xButton{
+    font-family: Helvetica;
+    float: right;
+    cursor: pointer;
+}
+
+
+
+/*STYLE FOR SKILLS DROPDOWN AREA*/
+
+#skillsDrop{
+    display: none;
+}
+
+#imgContainer{
+    width: 100%;
+    margin: auto;
+}
+
+
+#skillsDrop img{
+   margin: 15px 40px;
+   
+}
+
+/*STYLE FOR WORKS DROPDOWN AREA*/
+
+#worksDrop{
+    display: none;
+}
+
+.project{
+    width: 60%;
+    margin: 30px auto;
+    border: 0px solid #323232;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+   /* height: 200px;*/
+    font-family: titleFont;
+    font-size: 15px;
+    padding: 15px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #323232;
+    overflow: scroll;
+    background-color: #faf7f0 ;
+    box-shadow:  0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow .2s, background-color .2s;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+
+
+}
+
+.project:hover{
+    box-shadow:  0 5px 40px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff9ef ;
+
+}
+
+.projTitle{
+    padding: 10px 0px ;
+    font-size: 26px;
+    float: right;
+
+}
+
+.previewImg{
+    float: left;
+    border: 0px solid black;
+    height: 160px;
+    width: 180px;
+    font-size: 10px;
+    margin: 10px 5px 5px 5px;
+    box-shadow:  0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.projDescript{
+    width: 50%;
+    text-align: right;
+    float: right;
+    font-family: paraFont;
+
+}
+
+.project:visited{
+    text-decoration: none;
+
+}
+
+.project:link{
+    text-decoration: none;
+
+}
+
+/*STYLE FOR ABOUT DROPDOWN AREA*/
+
+#aboutDrop{
+    display: block;
+}
+
+.aboutParagraph{
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+    font-family: paraFont;
+}
