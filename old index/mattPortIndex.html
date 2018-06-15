@@ -1,0 +1,173 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style/mattPortStyle.css" />
+    <title>Matt's Portfolio</title>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+</head>
+<body>
+    <div class="centered" id="title">Matt Heintz<br>Web Development<br>
+        <img id="mattLogo"src="imgs/mataLogoDark.png" height="200" width="200">
+    
+    </div>
+    <div id="downArrow"class="arrow"><img src="imgs/arrowdown.png" width="100" height="100"></div>
+    <div id="upArrow"class="arrow"><img src="imgs/upArrow.png" width="100" height="100"></div>
+   <!-- <div class="centered" id="navTitle">Navigation</div>-->
+ <!--TRY CSS TRANSITIONS FOR DISPLAYING AND HIDING BOXES, USE JS TO ASSIGN THE OPEN ID TO THE BOX THAT IS CLICKED AND ADD THE CLOSED ID TO ALL OTHER BOXES -->
+   
+ 
+ 
+ 
+   <!-- <div class="centered" id="section1">
+        <a onclick="fade.fadeMethod('#skillsDrop', '#worksDrop', '#aboutDrop');
+                    colorSwitcher.tabMethod('#skills', '#works', '#about');" 
+        id="skills"  class="homeBoxes" >Skills</a>
+
+        <a onclick="fade.fadeMethod('#worksDrop', '#skillsDrop', '#aboutDrop');
+                    colorSwitcher.tabMethod('#works', '#skills', '#about');" 
+        id="works" class="homeBoxes">Works</a>
+
+        <a onclick="fade.fadeMethod('#aboutDrop', '#skillsDrop', '#worksDrop');
+                    colorSwitcher.tabMethod('#about', '#skills', '#works');" 
+        id="about" class="homeBoxes homeBoxLit">About</a>
+    </div>-->
+
+
+
+    <div class="flex-container">
+            <a onclick="fade.fadeMethod('#skillsDrop', '#worksDrop', '#aboutDrop');
+                    colorSwitcher.tabMethod('#skills', '#works', '#about');" 
+        id="skills"  class="homeBoxes" >Skills</a>
+
+        <a onclick="fade.fadeMethod('#worksDrop', '#skillsDrop', '#aboutDrop');
+                    colorSwitcher.tabMethod('#works', '#skills', '#about');" 
+        id="works" class="homeBoxes">Works</a>
+
+        <a onclick="fade.fadeMethod('#aboutDrop', '#skillsDrop', '#worksDrop');
+                    colorSwitcher.tabMethod('#about', '#skills', '#works');" 
+        id="about" class="homeBoxes homeBoxLit">About</a>
+          </div>
+
+
+
+<div class="dropDown">
+    <div id="skillsDrop">
+        
+        
+        <div class="centered" id="imgContainer">  
+            <img src="imgs/htmlLogo.png" height="90" width="90">
+            <img src="imgs/cssLogo.png" height="90" width="65">
+            <img src="imgs/jsLogo.png" height="80" width="80">
+            <img src="imgs/jqLogo.gif" height="90" width="90"> 
+            <img src="imgs/bootstrapLogo.png" height="90" width="90"> 
+            <img src="imgs/psLogo.png" height="80" width="80">
+            <img src="imgs/APLogo.png" height="80" width="80"> 
+            <img src="imgs/p5.png" height="80" width="80"> 
+        </div>
+    </div>
+
+    <div id="worksDrop">
+
+            <a href="http://webpages.sou.edu/~heintzm/cap/p5_tut.html"
+            class="project">
+                  <div class="projTitle">'The Web' - Randomly Generated Abstract Art Program</div>
+                 
+                      <img class="previewImg" src="imgs/project_thumbs/rand.png">
+                  <div class="projDescript">
+                      This project uses the javascript library p5 (a javascript version of the programming language 
+                      'processing') to create a program that uses random genation to draw various strands across the 
+                      screen that form a unique web.
+
+                  </div>
+           </a>
+
+        <a href="http://webpages.sou.edu/~heintzm/emda407/bithell_project_site/bithellProjectIndex.html"
+         class="project">
+               <div class="projTitle">Website for a local audio-visual <br>artist's recent project.</div>
+              
+                   <img class="previewImg" src="imgs/project_thumbs/407.png">
+               <div class="projDescript">
+                   This project was conducted at SOU for professor David Bithell 
+                   who is working on his latest audio visual project. The project includes pipe based 
+                   mechanisms to create audio and a 3D printed cloud structure to accompany it.
+               </div>
+        </a>
+
+        <a href="http://webpages.sou.edu/~heintzm/GPRA/GPRAindex.html"
+         class="project">
+            <div class="projTitle">Personality Grilled Cheese Calculator (GCPRA)   </div>
+            <img class="previewImg" src="imgs/project_thumbs/gcpra.png">
+            <div class="projDescript">
+                (Project created for class for satirical/self-educational purposes)
+                Are you tired of being frustrated with never being able to make the best
+                grilled cheese based on your personality? Well the future is here. The world's first application that 
+                asks various personality questions and calculates an optimal grilled cheese 
+                sandwitch based on your results. 
+            </div>
+        </a>
+
+        <a href="http://webpages.sou.edu/~heintzm/port/projects//newReg%20/newRegIndex.html"
+         class="project">
+            <div class="projTitle">Client side rework of Southern Oregon <br>University registration system</div>
+            <img class="previewImg" src="imgs/project_thumbs/reg.png">
+            <div class="projDescript">
+                The Southern Oregon University's registration system works, however due to a rather outdated 
+                web registration portal, students must open 4-5 browser tabs (minimum) to register. My project 
+                acts as a prototype website for a new system where student's can register on a single tab.
+                (viewing on iMac will produce errors)
+
+            </div>
+        </a>
+
+        <a href="http://webpages.sou.edu/~heintzm/port/projects/img-gal/imgGal.html"
+        class="project">
+            <div class="projTitle">Basic Javascript Image Gallery </div>
+            <img class="previewImg" src="imgs/project_thumbs/gallery.png" >
+            <div class="projDescript">
+                A simple image gallery I created during the early stages of my javascript 
+                education. May seem small but projects like these help pave the way towards further progress
+            </div>
+         </a>
+
+         <a href="http://webpages.sou.edu/~heintzm/port/projects/boxAnim/animationTest.html" 
+         class="project">
+            <div class="projTitle">CSS Keyframe and Hover Animation</div>
+            <img class="previewImg" src="imgs/project_thumbs/box.png">
+            <div class="projDescript">
+                A small interactive project I created when I learned that CSS 
+                could have animations programmed without any programming language being referenced.
+            </div>
+                
+         </a>
+
+         <a class="project">
+                More coming soon !
+         </a>
+    </div>
+    
+    <div id="aboutDrop">
+            <p style="text-align:center;"> [enter good<br> photo of self]</p>
+            <div class="aboutParagraph">
+                Hello, my name is Matt Heintz and I have been studying and learning about 
+                web development at Southern Oregon University. I was born in Portland, Oregon 
+                and have lived throughout California and Oregon. I aim to work in front-end 
+                web development and expand my skills and knowledge of the internet. My 
+                skills and the projects I have been a part of can be viewed in the tabs above. 
+                Feel free to contact me at kapoink@gmail.com with any questions
+            </div>
+    </div>
+</div>    
+    <script type="text/javascript" src="js/mattPortJS.js"></script>
+</body>
+</html>
+
+<!--
+slide.slideMethod('#skillsDrop', '#worksDrop', '#aboutDrop'); scrollingControl()
+slide.slideMethod('#worksDrop','#skillsDrop', '#aboutDrop'); scrollingControl()
+slide.slideMethod('#aboutDrop', '#worksDrop','#skillsDrop'); scrollingControl()
+    
+<span class="xButton">&times;</span>
+
+<div class="dropDownTitle centered">Skills</div>
+
+-->
