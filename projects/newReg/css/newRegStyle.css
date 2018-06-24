@@ -1,0 +1,341 @@
+body{
+	color: #555;
+}
+
+div{
+		
+}
+
+
+div.header{
+	height: 90px;
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+
+img#souLogo{
+	margin: auto;
+	display: block;
+}
+
+ul#navList{
+	padding: 20px 3px;
+	background-color: #383838;
+	margin-top: 15px;
+	border: 0px solid;
+	border-radius: 5px;
+}
+
+
+ul#navList li{
+	display: inline;
+	color: white;
+	padding: 17px 10px;
+	font-size: 16px;
+	cursor: pointer;
+	border: 0px solid;
+	border-radius: 3px;
+
+	transition: background-color .4s;
+}
+
+ul#navList li:hover{
+	background-color: #d71a21;
+}
+
+div#studentInfo{
+	float: right;
+	text-align: right;
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+input#searchBar{
+	margin-top: 25px;
+	outline: none;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+	width: 100px;
+	
+	transition: border .5s;
+	
+}
+
+input#searchBar:focus{
+	border: 2px solid #555;
+}
+
+div.registrationBody{
+	height: 550px;
+	padding: 0px;
+	overflow: scroll;
+}
+
+
+
+
+
+
+.term{
+	display: block;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.subject{
+	display: none;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.list{
+	display: none;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.section231{
+	display: none;
+}
+
+.section332{
+	display: none;
+}
+
+.section347{
+	display: none;
+}
+
+
+
+
+
+
+p.termTitle{
+	font-size: 30px;
+}
+
+button#termButton{
+	margin-top: 10px;
+}
+
+
+
+
+
+p.subjectTitle{
+	font-size: 30px;
+}
+
+div#subjectSlider{
+	width: 45%;
+}
+
+div.subjectOption{
+	border: 0px;
+}
+
+p.backArrow{
+	cursor: pointer;
+	width: 50px;
+	margin-top: 20px;
+}
+
+div#lookUpClass{
+	height: 390px;
+	overflow: scroll;
+	padding: 0px 10px;
+	display: block;
+	border-top: 4px solid #555;
+	border-right: 2px solid #555;
+	border-left: 4px solid #555;
+	border-bottom: 2px solid #555;
+	border-radius: 10px 10px 0px 0px;
+	background-color: #F2F2F2;
+}
+
+
+
+
+
+
+
+p.classChoice{
+	padding-top: 5px;
+}
+
+p#classHeader{
+	font-size: 30px;
+}
+
+span.className{
+	padding-left: 60px;
+}
+
+span.classButton{
+	float: right;
+}
+
+
+
+
+
+table.classInfoTable tr th{
+	border: 2px solid #555;
+	padding: 0px 7px;
+}
+
+table.classInfoTable tr td{
+	padding: 0px 7px;
+	height: 50px;
+}
+
+
+p.classSectionTitle{
+	font-size: 30px;
+}
+
+.removeClassButton{
+	background-color: white;
+	border: 1px solid #555;
+	border-radius: 5px;
+	font-size: 10px;
+	margin: 0px 5px;
+	padding: 0px 3px 2px 3px;
+}
+
+
+
+div.weekGlance{
+	border-top: 2px solid #555;
+	border-right: 2px solid #555;
+	border-left: 4px solid #555;
+	border-bottom: 4px solid #555;
+	border-radius: 0px 0px 0px 10px;
+	background-color: #F2F2F2;
+}
+
+div.approveList{
+	border-top: 2px solid #555;
+	border-right: 2px solid #555;
+	border-left: 2px solid #555;
+	border-bottom: 4px solid #555;
+	border-radius: 0px 0px 10px 0px;
+	background-color: #F2F2F2;
+}
+
+div.weekSchedule{
+	height: 160px;
+	padding: 0px 10px;
+	overflow: scroll;
+	
+}
+
+table#weekAtAGlance{
+	margin-top: 10px;
+}
+
+table#weekAtAGlance tr th{
+	border: 2px solid #555;
+	padding: 0px 12px;
+}
+
+table#weekAtAGlance tr td{
+	border: 2px solid #555;
+	padding: 0px 2px;
+	height: 21px;
+	font-size: 9px;
+	overflow: scroll;
+}
+
+div#approvedHeader{
+	font-size: 25px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px
+}
+
+
+
+
+
+div.degreeWorksArea{
+	border-top: 4px solid #555;
+	border-right: 4px solid #555;
+	border-left: 2px solid #555;
+	border-bottom: 4px solid #555;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+}
+
+div#degreeHeader{
+	text-align: center;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+table#degreeWorksTable{
+	width: 98%;
+	margin: auto;
+}
+
+table#degreeWorksTable tr {
+	border: 2px solid #555;
+	padding: 0px 5px;
+}
+
+table#degreeWorksTable tr th{
+	padding: 3px 7px;
+	
+}
+
+th.bach{
+	font-size: 18px;
+}
+
+th.degWorkInfo{
+	float: right;
+	font-size: 12px;	
+}
+
+td.degWorkInfo{
+	float: right;
+	font-size: 12px;	
+}
+
+table#degreeWorksTable{
+
+}
+
+table#degreeWorksTable tr td{
+	padding: 3px 7px;
+}
+
+td.reqList ul{
+	list-style-type: none;
+	font-size: 12px;
+}
+
+td.reqList ul li{
+	padding: 3px 0px;
+}
+
+td.completeList{
+	font-size: 12px;
+}
+
+span.stillNeed{
+	float: right;
+}
+
+div.footerInfo{
+	margin-right: 10px;
+	margin-top: 5px;
+	font-size: 10px;
+	float: right;
+}
+
+p#bioList{
+	display: none;
+}

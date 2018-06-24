@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/newRegStyle.css">
+	</head>
+	<body>
+	
+		<div class="fluid-container topPart">
+			<div class="row">
+				<div class="col-sm-1 header"><img id="souLogo" src="imgs/souLogo.png" alt="souLogo" width="45px" height="85px"></div>
+				<div class="col-sm-8 header nav">
+					<ul id="navList">
+						<li>Personal Information</li>
+						<li>Student</li>
+						<li>Financial Aid</li>
+						<li>Employee</li>
+						<li>Return to Menu</li>
+						<li>Site Map</li>
+						<li>Help</li>
+						<li>Exit</li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-3 header">
+						Search: <input id="searchBar" size="10">
+					<div id="studentInfo">
+						Matthew J. Heintz<br>94042443x<br>Winter 2018<br>Oct 26, 2017 04:31 pm
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="fluid-container">
+			<div class="row">
+				<div class="col-sm-6 registrationBody left">
+				
+					<div class="row">
+						<div id="lookUpClass">
+
+							<p class="term termTitle">Select the Term below</p>
+							<select id="subjectSlider"class="term">
+								<option>Winter 2017</option>
+								<option>Spring 2018</option>
+								<option>Summer 2018</option>
+								<option>Fall 2018</option>
+							</select>
+							
+							<button id="termButton" class="term" onclick="searchTerm()">Select</button>
+
+							<p class="subject subjectTitle">Choose a subject below</p>
+							<select id="subjectSlider"class="subject" size="10">
+								<option class="subjectOption">American sign language</option>
+								<option class="subjectOption">Art</option>
+								<option class="subjectOption">Art history</option>
+								<option value="biology" class="subjectOption">Biology</option>
+								<option class="subjectOption">Business Admin</option>
+								<option class="subjectOption">Chemistry</option>
+								<option class="subjectOption">Communication</option>
+								<option class="subjectOption">Computer Science</option>
+								<option class="subjectOption">Creative writing</option>
+								<option class="subjectOption">Criminology</option>
+								<option class="subjectOption">Dance</option>
+								<option class="subjectOption">Economics</option>
+								<option class="subjectOption">Education</option>
+								<option class="subjectOption">EMDA</option>
+							</select>
+							<p id="bioList">bio list</p>
+							<!--For some reason this <p> needs to be here so the button remains under the box--><p></p>
+							
+							<button onclick="searchCourses()" id="searchButton" class="subject">search courses</button>
+							<p class="subject backArrow" onclick="backToTerm()">&larr; Back</p>
+							
+
+
+							<p id="classHeader" class="list">EMDA Classes</p>
+							<p class="classChoice list">432
+								<span class="className">Capstone</span>
+								<span class="classButton">
+									<button onclick="course332Sections()">view sections</button>
+								</span>
+							</p>
+							
+							<p class="classChoice list">231
+								<span class="className">Writing Nonlinear</span>
+								<span class="classButton">
+									<button onclick="course231Sections()">view sections</button>
+								</span>
+							</p>
+							
+							<p class="classChoice list">350
+								<span class="className">Projects</span>
+								<span class="classButton">
+									<button onclick="course347Sections()">view sections</button>
+								</span>
+							</p>
+							
+							<p class="classChoice list">202
+								<span class="className">Digital Video</span>
+								<span class="classButton">
+									<button>view sections</button>
+								</span>
+							</p>
+							
+							<p class="classChoice list">365
+								<span class="className">Graphic Design</span>
+								<span class="classButton">
+									<button>view sections</button>
+								</span>
+							</p>
+							
+							<p class="classChoice list">399
+								<span class="className">Special Studies</span>
+								<span class="classButton">
+									<button>view sections</button>
+								</span>
+							</p>
+							<p class="list backArrow" onclick="backToSubject()">&larr; Back</p>
+							
+
+
+
+							<p class="classSectionTitle section231">EMDA 231</p>
+							<table class="classInfoTable section231">
+								<tr>
+									<th>CRN</th>
+									<th>Cred</th>
+									<th>Title</th>
+									<th>Time</th>
+									<th>Instructor</th>
+									<th>Location</th>
+									<th>Cap</th>									
+									<th>WlCap</th>
+									<th>Str</th>							
+								</tr>
+								<tr>
+									<td id="4523"class="CRN"><button onclick="buttonReg4523()" class="regButton">4523</button></button></td>
+									<td class="title">Writing Nonlinear</td>
+									<td class="cred">4.0</td>
+									<td class="time">TR<br>10:30-12:20</td>
+									<td class="instructor">bob<br>bobman</td>
+									<td class="location">AB 103</td>
+									<td class="cap">6/20</td>
+									<td class="wlCap">0/5</td>
+									<td class="strand">EMDA 200</td>
+								</tr>
+								<tr>
+									<td id="5612"class="CRN"><button onclick="buttonReg5612()" class="regButton">5612</button></td>
+									<td class="title">Writing Nonlinear</td>
+									<td class="cred">4.0</td>
+									<td class="time">TR<br>8:30-10:20</td>
+									<td class="instructor">Steve Steveman</td>
+									<td class="location">AB 103</td>
+									<td class="cap">6/20</td>
+									<td class="wlCap">0/5</td>
+									<td class="strand">EMDA 200</td>
+								</tr>
+																							
+
+								<p class="classSectionTitle section332">EMDA 432</p>
+								<table class="classInfoTable section332">
+									<tr>
+										<th>CRN</th>
+										<th>Cred</th>
+										<th>Title</th>
+										<th>Time</th>
+										<th>Instructor</th>
+										<th>Location</th>
+										<th>Cap</th>
+										<th>WlCap</th>
+										<th>Str</th>
+									</tr>
+									<tr>
+										<td id="1123"class="CRN"><button onclick="buttonReg1123()" class="regButton">1123</button></button></td>
+										<td class="title">Capstone</td>
+										<td class="cred">4.0</td>
+										<td class="time">MW<br>1:30-3:20</td>
+										<td class="instructor">Jeff Jeffman</td>
+										<td class="location">MA 112</td>
+										<td class="cap">6/20</td>
+										<td class="wlCap">0/5</td>
+										<td class="strand">EMDA Capstone</td>
+									</tr>
+									<tr>
+										<td id="6577"class="CRN"><button onclick="buttonReg6577()" class="regButton">6577</button></td>
+										<td class="title">Capstone</td>
+										<td class="cred">4.0</td>
+										<td class="time">TR<br>8:30-10:20</td>
+										<td class="instructor">Don Donman</td>
+										<td class="location">MA 223</td>
+										<td class="cap">6/20</td>
+										<td class="wlCap">0/5</td>
+										<td class="strand">EMDA Capstone</td>
+									</tr>
+							</table>
+
+							<p class="classSectionTitle section347">EMDA 350</p>
+							<table class="classInfoTable section347">
+								<tr>
+									<th>CRN</th>
+									<th>Cred</th>
+									<th>Title</th>
+									<th>Time</th>
+									<th>Instructor</th>
+									<th>Location</th>
+									<th>Cap</th>
+									<th>WlCap</th>
+									<th>Str</th>
+								</tr>
+								<tr>
+									<td id="2234"class="CRN"><button onclick="buttonReg2234()" class="regButton">2234</button></button></td>
+									<td class="title">Projects</td>
+									<td class="cred">4.0</td>
+									<td class="time">MW<br>3:30-5:20</td>
+									<td class="instructor">Miles Mileman</td>
+									<td class="location">MA 122</td>
+									<td class="cap">6/20</td>
+									<td class="wlCap">0/5</td>
+									<td class="strand">EMDA Projects</td>
+								</tr>
+								<tr>
+									<td id="9909"class="CRN"><button onclick="buttonReg9909()" class="regButton">9909</button></td>
+									<td class="title">Projects</td>
+									<td class="cred">4.0</td>
+									<td class="time">MW<br>8:30-10:20</td>
+									<td class="instructor">Shoe Shoeman</td>
+									<td class="location">AB 129</td>
+									<td class="cap">6/20</td>
+									<td class="wlCap">0/5</td>
+									<td class="strand">EMDA Projects</td>
+								</tr>
+						</table>
+
+							<p class="backArrow section231" onclick="backToList231()">&larr; Back</p>
+							<p class="backArrow section332" onclick="backToList332()">&larr; Back</p>		
+							<p class="backArrow section347" onclick="backToList347()">&larr; Back</p>					
+							
+						</div>
+					</div>
+					
+					<div class="col-sm-6 weekSchedule weekGlance">
+						<table id="weekAtAGlance">
+							<tr>
+								<th>M</th>
+								<th>Tu</th>
+								<th>W</th>
+								<th>Th</th>
+								<th>Fr</th>
+							</tr>
+							<tr>
+								<td class="weekData" id="8:30M"></td>
+								<td class="weekData" id="8:30T"></td>
+								<td class="weekData" id="8:30W"></td>
+								<td class="weekData" id="8:30Th"></td>
+								<td class="weekData" id="8:30F"></td>
+								<td>8:30-10:30</td>
+							</tr>
+							<tr>
+								<td class="weekData" id="10:30M"></td>
+								<td class="weekData" id="10:30T"></td>
+								<td class="weekData" id="10:30W"></td>
+								<td class="weekData" id="10:30Th"></td>
+								<td class="weekData" id="10:30F"></td>
+								<td>10:30-12:20</td>
+							</tr>
+							<tr>
+								
+								<td class="weekData" id="1:30M"></td>
+								<td class="weekData" id="1:30T"></td>
+								<td class="weekData" id="1:30W"></td>
+								<td class="weekData" id="1:30Th"></td>
+								<td class="weekData" id="1:30F"></td>
+								<td>1:30-3:20</td>
+								
+							</tr>
+							<tr>
+								<td class="weekData" id="3:30M"></td>
+								<td class="weekData" id="3:30T"></td>
+								<td class="weekData" id="3:30W"></td>
+								<td class="weekData" id="3:30Th"></td>
+								<td class="weekData" id="3:30F"></td>
+								<td>3:30-5:20</td>
+							</tr>
+							<tr>
+								<td class="weekData" id="6:00M"></td>
+								<td class="weekData" id="6:00T"></td>
+								<td class="weekData" id="6:00W"></td>
+								<td class="weekData" id="6:00Th"></td>
+								<td class="weekData" id="6:00F"></td>
+								<td>6:00-9:50</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="col-sm-6 weekSchedule approveList">
+						<div id="approvedHeader">Approved Classes</div>
+						<ul id="approvedClasses">
+							
+						</ul>
+					</div>
+
+				</div>
+
+
+				<div class="col-sm-6 registrationBody degreeWorksArea">
+					<div class="">
+						<div id="degreeHeader">DegreeWorks</div>
+						<table id="degreeWorksTable">
+							<tr>
+								<th class="bach">Bachelors of Science</th>
+								<th class="degWorkInfo">Required Credits: 180<br>Applied Credits: 164</th>
+								<th class="degWorkInfo">Acedemic Year: 2017-2018<br>GPA: 3.10</th>
+							</tr>
+							<tr>
+								<td>180 Credits Required</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>SOU University Requirements</td>						
+								<td class="universityRequirements reqList">								
+									<ul>
+										<li>[X]&emsp; (A.B.C.): Writing & Oral Communication</li>
+										<li>[X]&emsp; (D): Quantitative Reasoning</li>
+										<li>[X]&emsp; (E): Humanities</li>
+										<li>[X]&emsp; (F): Social Science</li>
+										<li>[X]&emsp; (G): Science</li>
+										<li>[X]&emsp; (H.I.J.): University Studies Integration</li>
+									</ul>
+								</td>
+														
+							</tr>
+							<tr>
+								<td>Major Requirements</td>
+								<td class="majorRequirements reqList">						
+									<ul>
+										<li>[X]&emsp; 200 level EMDA Foundation </li>
+										<li>[X]&emsp; EMDA Writing Level</li>
+										<li>[X]&emsp; EMDA Theory Level</li>
+										<li>[X]&emsp; Projects<span class="stillNeed"><strong>Still Needed (1)</strong></span></li>
+										<li>[X]&emsp; Capstone<span class="stillNeed"><strong>Still Needed (2)</strong></span></li>
+										<li>[X]&emsp; EMDA Electives</li>
+									</ul>
+								</td>
+							<tr>
+								<td>Bachelor of Science<br>Requirements</td>
+								<td class="majorRequirements reqList">						
+									<ul>
+										<li>[X]&emsp; Science</li>
+										<li>[X]&emsp; Math</li>
+										<li>[X]&emsp; 180 Credits<span class="stillNeed"><strong>Still Needed (16)</strong></span></li>
+										<li>[X]&emsp; SOU University Requirements<span class="stillNeed"><strong>Still Needed (1)</strong></span></li>
+										<li>[X]&emsp; Major Requirements<span class="stillNeed"><strong>Still Needed (3)</strong></span></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>60 Upper Division Credits<br>(300 level or above) </td>
+								<td>[60/60] Complete</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="footerInfo">RELEASE: 8.7.1.2&emsp;&emsp;&copy; 2017 Ellucian Company L.P. and its affiliates.</div>
+	<script src="js/newRegJS.js" type="text/javascript"></script>
+	</body>
+</html>

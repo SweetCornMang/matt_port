@@ -1,0 +1,113 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="GPRAstyle.css">
+	
+</head>
+<body>
+<div id="bodyDiv">
+    <div id="splash" class="fade">
+        <div class="splashTitle">GCPra</div>
+        <p>The worlds first grilled cheese <br> personality recomendation application</p>
+        <button class="startButton" id="startButton">Begin</button>
+    </div>
+
+    <div class="question fade" id="q1">
+        <div class="questionTitle">
+           1.<br> Which of these three options best describes 
+            how you interact with the risks in your life</div>
+
+        <button class="b1" onclick="getValue(this)" value="1a">
+                You prefer stability in life and most risks aren't 
+                worth taking, the ones that are need careful analysis 
+                before taking</button>
+
+        <button class="b1" onclick="getValue(this)" value="1b">
+                Some risks are worth taking however most require 
+                planning and evaluation  </button>
+
+        <button class="b1" onclick="getValue(this)" value="1c">
+                You feel that most risks are meant to be taken and 
+                often end up broadening your horizon a a person </button>
+    </div>
+
+    <div class="question fade" id="q2">
+        <div class="questionTitle">
+            2.<br> Socially speaking, which of these options 
+            are you most similar to
+        </div>
+
+        <button class="b2" onclick="getValue(this); calcCheese()" value="2a">
+                Typically sticking to a closer knit group of friends</button>
+
+        <button class="b2" onclick="getValue(this); calcCheese()" value="2b">
+                Having a couple friend groups you spend most your time with</button>
+
+        <button class="b2" onclick="getValue(this); calcCheese()" value="2c">
+                You prefer an ample social life where knowing more people is better</button>
+    </div>
+
+    <div class="question fade" id="q3">
+        <div class="questionTitle">
+            3.<br> Which of these options best describes your 
+            level of preparedness in your daily life
+        </div>
+
+        <button class="b3" onclick="getValue(this)" value="3a">
+                You tend to bring the minimum of what you need 
+                to stay light throughout the day</button>
+
+        <button class="b3" onclick="getValue(this)" value="3b">
+                You bring what you need and are often prepared, 
+                however sometimes you're caught off guard and 
+                are unprepared for a situation</button>
+
+        <button class="b3" onclick="getValue(this)" value="3c">
+                You always bring exactly what is needed, 
+                sparing no expense to bring more than just
+                a few necessities with you, very seldom 
+                caught unprepared</button>
+    </div>
+
+    <div class="question fade" id="q4">
+        <div class="questionTitle"> 
+            4.<br> As a member of society, how do you 
+            respond to new trends</div>
+
+        <button class="b4" onclick="getValue(this); calcBread()" value="4a">
+                You see trends as a positive and include them in your life 
+                because of their ability to reach people quickly, and how 
+                they have potential to make yourself and others happy
+                </button>
+
+        <button class="b4" onclick="getValue(this); calcBread()" value="4b">
+                You see trends as coming and going however still look at each 
+                seriously to see if adopting it may positively improve your life
+            </button>
+            
+        <button class="b4" onclick="getValue(this); calcBread()" value="4c">
+                You see trends but are rarely influenced to change yourself 
+                based on them, even if the trends have a potential benefit
+               </button>
+    </div>
+
+    <div id="finalContainer" class="fade">
+        <button class="calcButton" id="calcButton">Calculate Sandwich</button>
+        <!-- <button class="final start" id="returnToStart">Try again</button>-->
+    </div>
+
+    <div id="tryAgain" class="fade">
+        <div id="finalResult"></div>
+        <img class="finalImg" src="" height="" width="">
+        <img class="finalImg" src="" height="" width="">
+        <br>
+        <button class="backToStart">Try Again</button>
+    </div>
+    
+   
+</div>
+<div id="dataContainer">
+   <div id="data"></div>
+</div>
+	<script src="GPRAjs.js" type="text/javascript"></script>
+</body>
+</html>

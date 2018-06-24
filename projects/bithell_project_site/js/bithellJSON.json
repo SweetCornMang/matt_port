@@ -1,0 +1,32 @@
+{
+    "imgs":[
+        {"src": "imgs/slider_images/_DSC0008.JPG", "description": "I am descrption for the first photo"},
+        {"src": "imgs/slider_images/_DSC0014.JPG", "description": "I'm for the second photo"},
+        {"src": "imgs/slider_images/_DSC0076.JPG", "description": "third"},
+        {"src": "imgs/slider_images/_DSC0079.JPG", "description": "forth"},
+        {"src": "imgs/slider_images/_DSC0080.JPG", "description": "fifth"},
+        {"src": "imgs/slider_images/_DSC0085.JPG", "description": "siiiixx"},   
+        {"src": "imgs/slider_images/_DSC0792.jpg", "description": "seven"},       
+        {"src": "imgs/slider_images/_DSC0808.jpg", "description": "eight"},       
+        {"src": "imgs/slider_images/_DSC0837_1.jpg", "description": "nine"},       
+        {"src": "imgs/slider_images/_DSC1396.jpg", "description": "ten"},       
+        {"src": "imgs/slider_images/_DSC1415.jpg", "description": "elev"},       
+        {"src": "imgs/slider_images/_DSC1441.jpg", "description": "twel"},       
+        {"src": "imgs/slider_images/_DSC1442.jpg", "description": "thir"},       
+        {"src": "imgs/slider_images/_DSC1448.jpg", "description": "fourt"},       
+        {"src": "imgs/slider_images/_DSC1470.jpg", "description": "fifteen"},       
+        {"src": "imgs/slider_images/IMG_0001.JPG", "description": "sixteen"},       
+        {"src": "imgs/slider_images/IMG_0002.JPG", "description": "seventeen"},       
+        {"src": "imgs/slider_images/IMG_0005.JPG", "description": "eighteen"},       
+        {"src": "imgs/slider_images/IMG_0042.jpg", "description": "nineteen"},       
+        {"src": "imgs/slider_images/IMG_0048.jpg", "description": "twenty"},       
+        {"src": "imgs/slider_images/IMG_0055.jpg", "description": "twone"},
+        {"src": "imgs/slider_images/IMG_0059.jpg", "description": "twtwo"},       
+        {"src": "imgs/slider_images/IMG_7036.JPG", "description": "twthree"}
+    
+    ],
+    "vids":[
+        {"thumbPath":"imgs/testImgs/testImg.png", "src": "https://www.youtube.com/embed/C0DPdy98e4c", "description": ""},
+        {"thumbPath":"imgs/testImgs/test2.png", "src": "https://www.youtube.com/embed/QohH89Eu5iM", "description": ""}
+    ]
+}

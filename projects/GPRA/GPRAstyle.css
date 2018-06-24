@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    
+    background-color: #ffda79; 
+}
+
+@font-face{
+    font-family: sTitle;
+    src: url(fonts/palanquin-bold.ttf);
+}
+
+@font-face{
+    font-family: title;
+    src: url(fonts/palanquin-regular.ttf);
+}
+
+@font-face{
+    font-family: questionText;
+    src: url(fonts/palanquin-extralight.ttf);
+}
+
+.fade{
+    animation-name: fader;
+    animation-duration: 3.5s;
+}
+
+@keyframes fader {
+    0% {opacity: 0} 
+    20%{opacity: 1}
+    
+  }
+
+#bodyDiv{
+    /*margin: 20px auto;
+    width: 90%;*/
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    
+}
+
+/*FOR THE START PAGES AND QUESTIONS*/
+div button{
+    background-color: #ffb54d;
+    /* Green */
+    font-family: questionText;
+    border: none;
+    border-radius: 10px;
+    
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 90px 8px;
+    cursor: pointer;
+    line-height: 1.2;
+    width: 250px;
+
+    transition: background-color .5s;
+}
+
+div button:hover{
+    background-color: #ffa528;
+}
+
+.questionTitle{
+    font-size: 35px;
+    width: 70%;
+    margin: auto;
+    font-family: title;
+    line-height: 1.2;
+    height: 130px;
+}
+
+div.question{
+    margin-bottom: 20px;
+}
+
+div#splash p{ 
+    font-family: questionText;
+    font-size: 20px;
+    margin: 0px;
+}
+
+div.splashTitle{
+    font-family: sTitle;
+    font-size: 65px;
+}
+
+button.startButton{
+    margin: 30px 0px;
+    padding: 20px 20px;
+    font-size: 20px;
+    width: 110px;
+}
+
+#calcButton{
+    margin: 15px 0px;
+    padding: 20px 20px;
+    font-size: 20px;
+    width: 150px;
+}
+
+
+/*FOR THE END PAGES*/
+#tryAgain{
+    display: none;
+    font-family: title;
+    font-size: 30px;
+}
+
+.finalImg{
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+}
+
+button.backToStart{
+    margin: 15px 0px;
+    padding: 20px 20px;
+    font-size: 20px;
+    width: 150px;
+}
+
+
+/*STYLES THE DISPLAY FROM BLOCK TO NONE AS THE USER GOES THROUGH THE QUESTIONS*/
+div#splash{
+    display: block;
+}
+div#q1{
+    display: none;
+}
+
+div#q2{
+    display: none
+}
+
+div#q3{
+    display: none;
+}
+
+div#q4{
+    display: none;
+}
+
+
+
+#finalContainer{
+    display: none;
+    
+}
+
+
+
+#dataContainer{
+    visibility: hidden;
+}

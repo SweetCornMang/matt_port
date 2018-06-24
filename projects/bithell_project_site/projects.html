@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>emda407 project project</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="bithellProjectStyle.css" />
+</head>
+
+<body>
+    <h1 id="projectTitle"  style="text-align:center;">
+        <a href="bithellProjectIndex.html">Large Title</a>
+    </h1>
+    <span><a class="arrow prev" >&#10094;</a></span>
+    <span><a class="arrow next" >&#10095;</a></span>
+    
+    <div id="slideshowContainer">
+        <img id="largeImg" height="300" width="300"  >
+        <iframe id="vidFrame" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id="buttonContainer">
+        <button onclick="showHide.showHideMethod('vidFrame', 'vidThumbContainer', 'vidDescription', 'largeImg', 'thumbContainer', 'imgDescription', 'visible')" class="sliderButton" id="imgButton">Photos</button>
+        <button onclick="showHide.showHideMethod('largeImg', 'thumbContainer', 'imgDescription', 'vidFrame', 'vidThumbContainer', 'vidDescription', 'hidden')" class="sliderButton" id="vidButton">Videos</button>
+    </div>
+
+    <div id="thumbContainer">
+       <!-- 
+        <img src="imgs/testImg.png" >
+        <img src="imgs/test2.png" >
+        <img src="imgs/test3.png" >
+        <img src="imgs/test4.png" >
+        <img src="imgs/test5.jpeg" >
+        <img src="imgs/test6.jpg" >
+        <img src="imgs/test6.jpg" >
+        <img src="imgs/test6.jpg" >
+        <img src="imgs/test6.jpg" >
+        <img src="imgs/test6.jpg" >
+        <img src="imgs/test6.jpg" >
+        <img src="imgs/test6.jpg" >
+        <img src="imgs/test6.jpg" >
+       -->
+        
+
+    </div>
+    
+    <div id="vidThumbContainer">
+        <!--<img class="thumb" src="imgs/testImg.png" >
+        <img class="thumb" src="imgs/test2.png" > -->
+
+       <!-- <input type="image" src="imgs/testImg.png"  class="vidThumb" value="https://www.youtube.com/embed/C0DPdy98e4c">
+        <input type="image" src="imgs/test2.png" class="vidThumb">-->
+    </div>
+
+    <div id="imgDescription">
+        
+    </div>
+
+    <div id="vidDescription">
+    </div>
+
+    <script src="js/bithellSiteProjectJS.js" type="text/javascript"></script>
+    
+</body>
+</html>

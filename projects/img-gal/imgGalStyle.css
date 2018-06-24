@@ -1,0 +1,86 @@
+@font-face {
+    font-family: mattFont;
+    src: url(fonts/adamCGpro.otf);
+}
+
+html{
+    background-color: #a9a9a9;
+}
+
+div{
+    margin: auto;
+}
+
+div#title{
+    text-align: center;
+    font-family: mattFont;
+    font-size: 35px;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+
+    margin: 20px;
+    
+}
+
+div#bigBox{
+    height: 27em;
+    width: 47em;
+    display: flex;
+    margin: auto;
+    border: 3px #0e1111 solid;
+    overflow: scroll;
+    background-color:#DCDCDC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+
+
+div#thumbsBox{
+    background-color:#DCDCDC;    
+    display: flex;
+    height: 8em;
+    width: 43em;
+    border: 3px #0e1111 solid;
+    border-top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+   
+
+    transition: width .5s, height .5s;
+}
+
+div#thumbsBox:hover{
+    width: 45em;
+    height: 9em;
+}
+
+img{
+    margin: auto;
+    
+}
+
+img.thumbs{
+    padding: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    
+}
+
+img#bigBoxImg{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+a.arrow{
+    cursor: pointer;
+}

@@ -1,0 +1,181 @@
+body{
+	margin: 0 0 0 0
+}
+
+div.text{
+	width:300px;
+	height:70px;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	font-family: Georgia;
+}
+
+
+
+
+div.left{
+	width: 200;
+	height: 200;
+	background-color: lightblue;
+	position: absolute;
+	animation-name: test;
+	animation-duration: 2s;
+	float:left;
+	transition: width 1s, height 1s, opacity 1.5s;
+}
+
+div.left:hover{
+	width: 400;
+	height: 400;
+	opacity:.5;
+}
+
+@keyframes test{
+	0% {
+		left: 0em;
+		top: 0em;
+		transform: rotate(0deg);
+		opacity:1;
+	}
+	
+	50%{
+		left: 30em;
+		top: 10em;
+		transform: rotate(45deg);
+		opacity:.2;
+	}
+	
+	100%{
+		left: 0em;
+		top: 0em;
+		transform: rotate(0deg);
+		opacity:1;
+	}
+}
+
+
+
+div.right{
+	border: 0px solid black;
+	width: 200;
+	height: 200;
+	background-color: lightblue;
+	position: absolute;
+	animation-name: test2;
+	animation-duration: 2s;
+	right: 0px;
+	top: 0px;
+	transition: width 1s, height 1s, border-radius 1s;
+}
+
+div.right:hover{
+	width: 400;
+	height: 400;
+	border-radius: 10em;
+}
+
+@keyframes test2{
+	0% {
+		right: 0em;
+		top: 0em;
+		transform: rotate(0deg);
+	}
+	
+	50%{
+		right: 30em;
+		top: 10em;
+		transform: rotate(-45deg);
+	}
+	
+	100%{
+		right: 0em;
+		top: 0em;
+		transform: rotate(0deg);
+	}
+}
+
+
+
+div.bottomRight{
+	width: 200;
+	height: 200;
+	background-color: lightblue;
+	position: absolute;
+    bottom: 0em;
+    right: 0em;
+    animation-name: test3;
+	animation-duration: 2s;
+	transition: width 1s, height 1s;
+	overflow: hidden;
+	
+}
+
+div.bottomRight:hover{
+	width: 400;
+	height: 400;
+}
+
+@keyframes test3{
+	0% {
+		right: 0em;
+		bottom: 0em;
+		transform: rotate(0deg);
+	}
+	
+	50%{
+		right: 30em;
+		bottom: 10em;
+		transform: rotate(-45deg);
+	}
+	
+	100%{
+		right: 0em;
+		bottom: 0em;
+		transform: rotate(0deg);
+	}
+}
+
+
+
+
+div.bottomleft{
+	width: 200;
+	height: 200;
+	background-color: lightblue;
+	position: absolute;
+    bottom: 0em;
+    left: 0em;
+    animation-name: test4;
+	animation-duration: 2s;
+	transition: width 1s, height 1s, background-color 1s;
+	
+	
+}
+
+div.bottomLeft:hover{
+	width: 400;
+	height: 400;
+	background-color: orange;
+}
+
+@keyframes test4{
+	0% {
+		left: 0em;
+		bottom: 0em;
+		transform: rotate(0deg);
+	}
+	
+	50%{
+		left: 30em;
+		bottom: 10em;
+		transform: rotate(45deg);
+	}
+	
+	100%{
+		left: 0em;
+		bottom: 0em;
+		transform: rotate(0deg);
+	}
+}
