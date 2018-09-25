@@ -287,4 +287,8 @@ img#mattLogo{
         text-align: justify;
         margin: auto;
     }
+    /* SKILLS */
+    #imgContainer{
+        padding-top: 10px;
+    }
 }
