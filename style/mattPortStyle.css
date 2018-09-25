@@ -233,3 +233,58 @@ img#mattLogo{
     margin: auto;
     font-family: paraFont;
 }
+
+
+/* SCALING FOR MOBLE DEVICES */
+
+@media only screen and (max-width: 450px){
+    /* MOBLE STYLING FOR THE TITLE AND NAV ELEMENTS */
+    #title{
+        letter-spacing: 0px;
+        font-size: 35px;
+        padding: 25px 0px 25px 0px;
+        word-spacing: 5px;
+        margin-bottom: 0px;
+    }
+    .arrow{
+        display: none;
+    }
+    #mattLogo{
+        display: none;
+    }
+    .flex-container{
+        margin: 0px 0px;
+    }
+    .homeBoxes{
+        font-size: 22px;   
+    }
+    .dropDown{
+        margin: 0px 0px;
+        height:auto;
+        padding: 0px 0px 10px;
+    }
+    /* MOBLE STYLING FOR THE CONTENT OF EACH TAB */
+    /* ABOUT */
+    .aboutParagraph{
+        width: 80%;
+    }
+
+    /* PROJECTS */
+    .project{
+        width: 80%;
+    }
+    .projTitle{
+        padding: 0px;
+    }
+    .previewImg{
+        float: none;
+        margin: 5px;
+    }
+    .projDescript{
+        padding: 10px;
+        width: 85%;
+        float: none;
+        text-align: justify;
+        margin: auto;
+    }
+}
