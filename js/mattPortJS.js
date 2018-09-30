@@ -38,14 +38,14 @@ $(document).ready(function(){
     downA.click(function(){
         $(this).slideUp(600);
         upA.slideDown(600)
-        $("body").animate({
+        $("html, body").animate({
             scrollTop: $(".dropDown").offset().top
         } );   
     });    
      upA.click(function(){
         $(this).slideUp(600);
         downA.slideDown(600);
-        $("body").animate({
+        $("html, body").animate({
             scrollTop: $("#title").offset().top
         });
     });
